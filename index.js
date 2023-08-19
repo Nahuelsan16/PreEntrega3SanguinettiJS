@@ -1,10 +1,3 @@
-
-let Presupuesto = 0
-const PrecioPorMetro = 300
-function sumar(MetrosCuadrados, PrecioPorMetro) {
-   let Presupuesto = MetrosCuadrados + PrecioPorMetro
-   return Presupuesto
-}
 alert('Bienvenido a pinturas Nahuel!');
 
 let entrada = prompt("¡Ingresa un n° del 1 al 10 para ganar un descuento!");
@@ -18,13 +11,21 @@ switch (entrada) {
 }
 
 let respuesta = prompt('desea un presupuesto de pintura ya?')
-if (respuesta === 'si') {
-   var MetrosCuadrados = parseFloat(prompt('cuantos m² desea pintar?'));
-   sumar(MetrosCuadrados, PrecioPorMetro);
-}
+if (respuesta === 'si') {}
 else {
    alert('disfrute nuestra web ;)');
 }
 
+// ------------------------------------
+function PresupuestoPorMetro(MetrosCuadrados, PrecioPorMetro) {
+   const Presupuesto = MetrosCuadrados * PrecioPorMetro
+   return Presupuesto
+ }
+//   ----------------------------------------
+const PrecioPorMetro = 350
+const MetrosCuadrados = parseFloat(prompt('ingrese cantidad en m² que desea pintar'))
+
+const resultado = PresupuestoPorMetro(MetrosCuadrados, PrecioPorMetro)
+alert(resultado)
 
 alert('gracias')
