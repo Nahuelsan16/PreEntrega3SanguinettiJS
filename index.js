@@ -79,15 +79,18 @@ function aplicarDescuento(montoInicial, porcentajeDescuento) {
    const montoFinal = montoInicial - montoADescontar
    return montoFinal
 }
+function pedirDatos(){
+   
+}
 
 let codigoDescuento = parseInt(prompt('Tiene el pin de descuento?')) 
-if (codigo === 25) {
-   const montoInicial = parseFloat(prompt('ingrese el monto inicial'))
-   const porcentajeDescuento = 25
+if ( r === 25) {
+   const montoInicial = parseFloat(prompt('ingrese el monto inicial'));
+   const porcentajeDescuento = 25;
    const descuentoAplicado = aplicarDescuento(montoInicial, porcentajeDescuento)
    alert("el total es $" + descuentoAplicado)
 } else (codigo != 25); {
-   alert("la respuesta " + codigo + " no es el pin valido, lo sentimos" )
+   alert("la respuesta " + r + " no es el pin valido, lo sentimos" )
 }
 
 alert('gracias, disfuten nuestra web')
