@@ -42,8 +42,8 @@ prod5.sumaIva();
 
 // // --------------------------------------------------------------
 const listaDelUsuario = []
-alert("Encuesta al usuario: ¿Qué busca hoy?")
-let productosQueBusco = prompt("Cuantos productos necesita? Vendemos todo tipo de pinturas y materiales relacionados")
+alert("Vendemos todo tipo de pinturas y materiales relacionados")
+let productosQueBusco = prompt(" ¿Que cantidad de productos desea? ")
 
 for (let i = 0; i < productosQueBusco; i++) {
    const entrada = prompt("Ingrese lo que busca")
